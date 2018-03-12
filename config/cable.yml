@@ -1,0 +1,12 @@
+development:
+  adapter: redis
+  url: redis://localhost:6379
+  channel_prefix: rails-5-real-time-chat-app-with-action-cable_production
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: redis://localhost:6379/1
+  channel_prefix: rails-5-real-time-chat-app-with-action-cable_production

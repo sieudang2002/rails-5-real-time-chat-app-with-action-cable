@@ -1,0 +1,20 @@
+<div class="row col-md-8 col-md-offset-2">
+  <h1>Chatrooms</h1>
+  <%= render partial: "layouts/errors" %>
+  <%= form_tag(init_chatroom_chatrooms_path) do %>
+    <div class="form-group">
+      <label for="chatroom">Select chatroom:</label>
+      <%= select_tag :chatroom, options_from_collection_for_select(@chatrooms, "id", "topic"), class: 'form-control'%>
+    </div>
+    <!-- <div class="form-group">
+      <label for="chatroom">new chatroom:</label>
+      <%#= text_field_tag :topic, "new topic", class: 'form-control', placeholder: "new chatroom to create" %>
+    </div> -->
+    <div class="form-group">
+      <label for="username">Username</label>
+      <%= text_field_tag :username, "", class: 'form-control', placeholder: "Username", required: true %>
+    </div>
+    <button type="submit" class="btn btn-default">Join</button>
+  <% end %>
+
+</div>

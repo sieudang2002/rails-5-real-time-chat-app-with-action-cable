@@ -1,0 +1,6 @@
+
+<% if message.user.username == current_user.username %>
+  <%= "<p><span class='text-success'>#{message.user.username}</span>: <b>#{message.content}</b></p>".html_safe %>
+<% else %>
+  <%= "<p>#{message.user.username}: #{message.content}</p>".html_safe %>
+<% end %>
