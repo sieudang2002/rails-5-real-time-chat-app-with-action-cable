@@ -3,6 +3,7 @@
 A very tiny Rails 5 real time chat application using action cable for an Example
 also using jQuery, bootstrap-sass and font-awesome-sass
 
+[Live app](https://rails-5-real-time-chat-app.herokuapp.com/)
 
 Application versions: 
 
